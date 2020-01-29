@@ -16,9 +16,15 @@ namespace Iteration_Statements
             Console.WriteLine("Enter an integer value between 1 and 100");
             try
             {
+                // This variable will gather data from user input
                 string input = Console.ReadLine();
-
+                // This variable will be used to run iterative statements
                 int value = int.Parse(input);
+                // for loop to display the users entered value and the current value in the loop
+                for (int count = 1; count <= value; count++)
+                {
+                    Console.WriteLine("You have entered " + value.ToString() + ". " + "This is the current integer value in the loop: " + count.ToString());
+                }
             } // End of try
             catch
             {
